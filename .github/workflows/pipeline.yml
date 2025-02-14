@@ -39,8 +39,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build --pull --rm -f "Dockerfile" -t wstecnologia/hack_soat_video_processor:latest .
+          docker build --pull --rm -f "Dockerfile" -t wstecnologia/hack_soat_auth:latest .
       
       - name: Push Docker image
         run: |
-          docker push wstecnologia/hack_soat_video_processor:latest
+          docker push wstecnologia/hack_soat_auth:latest
