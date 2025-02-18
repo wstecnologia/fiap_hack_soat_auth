@@ -5,7 +5,7 @@ services:
     image: wstecnologia/hack_soat_auth
     container_name: hack_soat_auth
     restart: always
-    environment:
+    env_file:
       - .env
     ports:
       - "3000:3000"
