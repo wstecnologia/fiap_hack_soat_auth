@@ -1,7 +1,7 @@
-import { IUserRepository } from "@/application/repository/UserRepository";
-import { User } from "@/domain/entities/User";
 import { CognitoIdentityProviderClient, ConfirmSignUpCommand, InitiateAuthCommand, SignUpCommand } from "@aws-sdk/client-cognito-identity-provider";
 import { env } from "process";
+import { IUserRepository } from "../../application/repository/UserRepository";
+import { User } from "../../domain/entities/User";
 
 export class UserCognito implements IUserRepository {
   

@@ -1,9 +1,9 @@
-import { ConfirmSignUpUseCase } from '@/application/usecases/ConfirmSignUpUseCase';
-import { InitiateAuthUseCase } from '@/application/usecases/InitiateAuthUseCase';
-import { SignUpUseCase } from '@/application/usecases/SingUpUseCase';
-import { User } from '@/domain/entities/User';
-import { UserCognito } from '@/infrastructure/repository/UserCognito';
 import { Request, Response } from 'express';
+import { ConfirmSignUpUseCase } from '../../application/usecases/ConfirmSignUpUseCase';
+import { InitiateAuthUseCase } from '../../application/usecases/InitiateAuthUseCase';
+import { SignUpUseCase } from '../../application/usecases/SingUpUseCase';
+import { User } from '../../domain/entities/User';
+import { UserCognito } from '../../infrastructure/repository/UserCognito';
 
 export class UserController {
     private signUp:SignUpUseCase
